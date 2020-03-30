@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- richiamo fontawesome -->
+    <!-- <script src="https://kit.fontawesome.com/15ec4d483d.js" crossorigin="anonymous"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Palindroma</title>
+  </head>
+
+    <body>
+
+      <main>
+        <!-- barra fissa top -->
+        <div class="navbarTop">
+          <h1> Inserisci una parola e scopri se è Palindroma </h1>
+        </div>
+
+        <!-- sezione input -->
+          <div id="inputValore">
+            <!-- sezione che prende l'input dall'utente -->
+            <div class="inputUtente">
+              <div class="inputParola">
+                <p>Inserisci la parola da verificare</p>
+                <input id="parola" type="text" name="parola" value="">
+              </div>
+            </div>
+            <!-- sezione con i bottoni -->
+            <div class="bottoniFunzionali">
+              <button id="genera" type="button" name="button">
+                Scopri
+              </button>
+              <button id="annulla" type="button" name="button">
+                Annulla
+              </button>
+            </div>
+          </div>
+
+        <!-- sezione calcolo prezzo -->
+        <div id="risultatoPalindroma">
+          <div class="containerPalindroma">
+            <div class="contieniRisultatoPalindroma">
+              <span id="isPalindroma"></span>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+      <script type="text/javascript" src="main.js"> </script>
+    </body>
+
+</html>
