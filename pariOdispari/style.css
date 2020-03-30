@@ -18,7 +18,7 @@ body {
 }
 
 main {
-  height: calc(100vh - 80px);  /* 300 è barrafixed + altezza fissa footer*/
+  height: calc(100vh - 80px);  /* 80 è barrafixed*/
   background-color: #e3f2fd;
 }
 
@@ -54,7 +54,7 @@ main {
 /* gestione degli input presi dall'utente */
 .inputUtente{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 70%;
   margin-left: 15%;
@@ -88,44 +88,44 @@ main {
     border: none;
     background-color: #61ce4e;
     margin: 10px;
-    margin-bottom: 20px;
     outline: none;
 }
 
 /* ************************************************************************* */
 /* ***************************  SEZIONE CALCOLO PREZZO ********************* */
 /* ************************************************************************* */
-#risultatoPalindroma {
+#vincitore {
   display: none;
   text-align: center;
 }
 
-#risultatoPalindroma h1 {
+#vincitore h1 {
   color: #1b3c59;
   margin-bottom: 5px;
 }
 
-.containerPalindroma{
+.containerVincitore{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 200px;
 }
 /* questa classe crea l'illusione di un treno */
-.contieniRisultatoPalindroma{
+.contieniRisultatoVincitore{
   background-color: #1b3c59;
   border-top: 6px rgba(0, 0, 0, 0.15) solid;
   border-bottom: 6px rgba(0, 0, 0, 0.3) solid;
   border-left: 6px #61ce4e solid;
   border-right: 6px #61ce4e solid;
   border-radius: 50px;
-  height: 50px;
-  width: 200px;
+  height: 118px;
+  width: 640px;
 }
 
-.contieniRisultatoPalindroma span{
+
+.contieniRisultatoVincitore span{
   display: inline-block; /*così posso dare margin agli span*/
   color: white;
   font-size: 21px;
-  margin-top: 5px;
+  margin-top: 17px;
 }

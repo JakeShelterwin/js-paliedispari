@@ -7,7 +7,7 @@
     <!-- <script src="https://kit.fontawesome.com/15ec4d483d.js" crossorigin="anonymous"></script> -->
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Palindroma</title>
+    <title>Pari o Dispari</title>
   </head>
 
     <body>
@@ -15,18 +15,32 @@
       <main>
         <!-- barra fissa top -->
         <div class="navbarTop">
-          <h1> Inserisci una parola e scopri se è Palindroma </h1>
+          <h1> Gioca a Pari o Dispari contro il PC! </h1>
         </div>
 
         <!-- sezione input -->
           <div id="inputValore">
             <!-- sezione che prende l'input dall'utente -->
             <div class="inputUtente">
-              <div class="inputParola">
-                <p>Inserisci la parola da verificare</p>
-                <input id="parola" type="text" name="parola" value="">
+              <div class="inputNumero">
+                <p>Scegli un numero da 1 a 5</p>
+                <select id="numero" name="pariOdispari">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+              <div class="sceltaPariOdispari">
+                <p>Scegli se vince Pari o Dispari</p>
+                <select id="pariOdispari" name="pariOdispari">
+                  <option value="Pari">Pari</option>
+                  <option value="Dispari">Dispari</option>
+                </select>
               </div>
             </div>
+
             <!-- sezione con i bottoni -->
             <div class="bottoniFunzionali">
               <button id="genera" type="button" name="button">
@@ -36,14 +50,14 @@
                 Annulla
               </button>
             </div>
-
+            
           </div>
 
-        <!-- sezione risultatoPalindroma -->
-        <div id="risultatoPalindroma">
-          <div class="containerPalindroma">
-            <div class="contieniRisultatoPalindroma">
-              <span id="isPalindroma"></span>
+        <!-- sezione vincitore -->
+        <div id="vincitore">
+          <div class="containerVincitore">
+            <div class="contieniRisultatoVincitore">
+              <span id="chiVince"></span>
             </div>
           </div>
         </div>
